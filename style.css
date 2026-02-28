@@ -25,6 +25,13 @@ body {
   gap: 25px;
 }
 
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* display: none; Initially hidden, will be shown when needed */
+}
+
 /* ===== HEADER ===== */
 .container-header {
   display: flex;

@@ -1,111 +1,182 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz App</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" type="module"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js" type="module"></script> -->
+  </head>
 
-<body>
-  <div class="main-container">
-
-    <!-- HEADER -->
-    <div class="container-header">
-      <img src="./images/avatar.png" alt="avatar" class="avatar" />
-      <div class="greeting">
-        <h2>Good Morning!</h2>
-        <p>Ready to level up your skills?</p>
-      </div>
-    </div>
-
-    <!-- STREAK & DAILY GOAL SECTION -->
-    <div class="streak-achievement">
-      
-      <!-- Streak -->
-      <div class="streak-card">
-        <h3>🔥 Streak</h3>
-        <div class="streak-days">
-          <span>5</span>
-          <p>days</p>
-        </div>
-      </div>
-
-      <!-- Daily Goal -->
-      <div class="goal-card">
-        <h3>🎯 Daily Goal</h3>
-        <div class="goal-circle">
-          <span>10</span>
-          <p>quizzes</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- DISCOVER -->
-    <div class="discover">
-      <h2>Discover</h2>
-      <div class="discover-items">
-        <div class="discover-item">
-          <img src="./images/js.avif" alt="JavaScript" />
-          <p>JavaScript</p>
-        </div>
-        <div class="discover-item">
-          <img src="./images/html.jpeg" alt="HTML" />
-          <p>HTML</p>
-        </div>
-        <div class="discover-item">
-          <img src="./images/css.png" alt="CSS" />
-          <p>CSS</p>
-        </div>
-        <div class="discover-item">
-          <img src="./images/c-sharp.png" alt="C#" />
-          <p>C#</p>
-        </div>
-        <div class="discover-item">
-          <img src="./images/node.jpg" alt="node" />
-          <p>Node.js</p>
-      </div>
-      
-      
-    </div>
-
-    <!-- RECENT QUIZZES -->
-    <div class="recent-quiz">
-      <h2>Recent Quiz</h2>
-      <div class="recent-quiz-items">
-        <div class="recent-quiz-item">
-          <img src="./images/js.avif" alt="JavaScript Quiz" class="recent-quiz-item-image" />
-          <div>
-            <h3>JavaScript Quiz</h3>
-            <p>Last Attempt: 2 days ago</p>
+  <body>
+    <main class="main-container">
+      <!-- Home / Dashboard section  -->
+      <!-- ================= HEADER ================= -->
+      <section class="home-section" >
+        <header class="container-header">
+          <img src="./images/avatar.png" alt="User Avatar" class="avatar" />
+          <div class="greeting">
+            <h1>Good Morning 👋</h1>
+            <p>Ready to level up your skills?</p>
           </div>
-        </div>
-        <div class="recent-quiz-item">
-          <img src="./images/html.jpeg" alt="HTML Quiz" class="recent-quiz-item-image" />
-          <div>
-            <h3>HTML Quiz</h3>
-            <p>Last Attempt: 5 days ago</p>
-          </div>
-        </div>
-        <div class="recent-quiz-item">
-          <img src="./images/css.png" alt="CSS Quiz" class="recent-quiz-item-image" />
-          <div>
-            <h3>CSS Quiz</h3>
-            <p>Last Attempt: 1 week ago</p>
-          </div>
-        </div>
-        <div class="recent-quiz-item">
-          <img src="./images/c-sharp.png" alt="C# Quiz" class="recent-quiz-item-image" />
-          <div>
-            <h3>C# Quiz</h3>
-            <p>Last Attempt: 3 weeks ago</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </header>
 
-  </div>
-</body>
+        <!-- ================= STREAK & GOAL ================= -->
+        <section class="streak-achievement">
+          <article class="streak-card">
+            <h2>🔥 Streak</h2>
+            <div class="streak-days">
+              <span class="number">5</span>
+              <p>Days</p>
+            </div>
+          </article>
+
+          <article class="goal-card">
+            <h2>🎯 Daily Goal</h2>
+            <div class="goal-circle">
+              <span class="number">10</span>
+              <p>Quizzes</p>
+            </div>
+          </article>
+        </section>
+
+        <!-- ================= DISCOVER ================= -->
+        <section class="discover">
+          <h2>Discover</h2>
+
+          <div class="discover-items">
+            <article class="discover-item">
+              <img src="./images/js.avif" alt="JavaScript Logo" />
+              <p>JavaScript</p>
+            </article>
+
+            <article class="discover-item">
+              <img src="./images/html.jpeg" alt="HTML Logo" />
+              <p>HTML</p>
+            </article>
+
+            <article class="discover-item">
+              <img src="./images/css.png" alt="CSS Logo" />
+              <p>CSS</p>
+            </article>
+
+            <article class="discover-item">
+              <img src="./images/c-sharp.png" alt="C# Logo" />
+              <p>C#</p>
+            </article>
+
+            <article class="discover-item">
+              <img src="./images/node.jpg" alt="Node.js Logo" />
+              <p>Node.js</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ================= RECENT QUIZZES ================= -->
+        <section class="recent-quiz">
+          <h2>Recent Quizzes</h2>
+
+          <div class="recent-quiz-items">
+            <article class="recent-quiz-item">
+              <img
+                src="./images/js.avif"
+                alt="JavaScript Quiz"
+                class="recent-quiz-item-image"
+              />
+              <div>
+                <h3>JavaScript Quiz</h3>
+                <p>Last Attempt: 2 days ago</p>
+              </div>
+            </article>
+
+            <article class="recent-quiz-item">
+              <img
+                src="./images/html.jpeg"
+                alt="HTML Quiz"
+                class="recent-quiz-item-image"
+              />
+              <div>
+                <h3>HTML Quiz</h3>
+                <p>Last Attempt: 5 days ago</p>
+              </div>
+            </article>
+
+            <article class="recent-quiz-item">
+              <img
+                src="./images/css.png"
+                alt="CSS Quiz"
+                class="recent-quiz-item-image"
+              />
+              <div>
+                <h3>CSS Quiz</h3>
+                <p>Last Attempt: 1 week ago</p>
+              </div>
+            </article>
+
+            <article class="recent-quiz-item">
+              <img
+                src="./images/c-sharp.png"
+                alt="C# Quiz"
+                class="recent-quiz-item-image"
+              />
+              <div>
+                <h3>C# Quiz</h3>
+                <p>Last Attempt: 3 weeks ago</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <!-- ================= QUIZ SECTION ================= -->
+      <section class="quiz-section" hidden>
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h2>Quiz Time 🚀</h2>
+
+            <div class="progress-circle">
+              <svg class="progress-ring" width="50" height="50">
+                <circle
+                  class="progress-ring__background"
+                  stroke="#ffffff33"
+                  stroke-width="5"
+                  fill="transparent"
+                  r="22"
+                  cx="25"
+                  cy="25"
+                />
+                <circle
+                  class="progress-ring__circle"
+                  stroke="#fff"
+                  stroke-width="5"
+                  fill="transparent"
+                  r="22"
+                  cx="25"
+                  cy="25"
+                />
+              </svg>
+              <span class="progress-text">1/5</span>
+            </div>
+          </div>
+
+          <div class="question" id="question"></div>
+          <div class="answers"></div>
+          <div class="feedback" id="feedback"></div>
+
+          <button id="next-question" class="next-btn" disabled>
+            Next Question →
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= RESULT SECTION ================= -->
+      <section class="result-section" id="result-section" hidden>
+        <div class="quiz-card">
+          <h2>🎉 Quiz Completed!</h2>
+          <p id="final-score"></p>
+          <button id="restart-btn" class="next-btn">Restart Quiz</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
