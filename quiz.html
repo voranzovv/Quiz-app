@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" type="module" defer></script>
+</head>
+
+<body>
+  <div class="main-container">
+
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section">
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <h2>Quiz Time 🚀</h2>
+          <div class="progress-circle">
+            <svg class="progress-ring" width="50" height="50">
+              <circle class="progress-ring__background" stroke="#ffffff33" stroke-width="5" fill="transparent" r="22" cx="25" cy="25"/>
+              <circle class="progress-ring__circle" stroke="#fff" stroke-width="5" fill="transparent" r="22" cx="25" cy="25"/>
+            </svg>
+            <span class="progress-text">1/5</span>
+          </div>
+        </div>
+
+        <div class="question" id="question"></div>
+
+        <div class="answers"></div>
+
+        <div class="feedback" id="feedback"></div>
+
+        <button id="next-question" class="next-btn" disabled>Next Question →</button>
+      </div>
+    </section>
+
+    <!-- FINAL RESULT -->
+    <section class="result-section" id="result-section" style="display:none;">
+      <div class="quiz-card">
+        <h2>🎉 Quiz Completed!</h2>
+        <p id="final-score"></p>
+        <button id="restart-btn" class="next-btn">Restart Quiz</button>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
