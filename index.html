@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/home.js"></script>
     <!-- <script src="script.js" type="module"></script> -->
   </head>
 
@@ -44,28 +45,28 @@
         <section class="discover">
           <h2>Discover</h2>
 
-          <div class="discover-items">
-            <article class="discover-item">
+          <div class="discover-items" id="discover-JavaScript" >
+            <article class="discover-item" onclick="startQuiz('JavaScript')">
               <img src="./images/js.avif" alt="JavaScript Logo" />
               <p>JavaScript</p>
             </article>
 
-            <article class="discover-item">
+            <article class="discover-item" onclick="startQuiz('HTML')">
               <img src="./images/html.jpeg" alt="HTML Logo" />
               <p>HTML</p>
             </article>
 
-            <article class="discover-item">
+            <article class="discover-item" onclick="startQuiz('CSS')">
               <img src="./images/css.png" alt="CSS Logo" />
               <p>CSS</p>
             </article>
 
-            <article class="discover-item">
+            <article class="discover-item" onclick="startQuiz('C#')">
               <img src="./images/c-sharp.png" alt="C# Logo" />
               <p>C#</p>
             </article>
 
-            <article class="discover-item">
+            <article class="discover-item" onclick="startQuiz('Node.js')">
               <img src="./images/node.jpg" alt="Node.js Logo" />
               <p>Node.js</p>
             </article>
@@ -129,7 +130,7 @@
       </section>
 
       <!-- ================= QUIZ SECTION ================= -->
-      <section class="quiz-section" hidden>
+      <section class="quiz-section" id="quiz-section" >
         <div class="quiz-card">
           <div class="quiz-header">
             <h2>Quiz Time 🚀</h2>
@@ -170,7 +171,7 @@
       </section>
 
       <!-- ================= RESULT SECTION ================= -->
-      <section class="result-section" id="result-section" hidden>
+      <section class="result-section" id="result-section" >
         <div class="quiz-card">
           <h2>🎉 Quiz Completed!</h2>
           <p id="final-score"></p>
