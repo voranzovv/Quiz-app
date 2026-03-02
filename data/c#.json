@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "question": "Which keyword is used to define a class in C#?",
+    "options": ["class", "Class", "struct", "object"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "Which data type is used to store a true or false value?",
+    "options": ["int", "bool", "string", "char"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "Which of these is the entry point of a C# program?",
+    "options": ["Main()", "Start()", "Init()", "Program()"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "question": "How do you declare an integer variable in C#?",
+    "options": ["int x;", "integer x;", "num x;", "var x;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "Which access modifier allows access only within the same class?",
+    "options": ["public", "private", "protected", "internal"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "Which keyword is used for inheritance in C#?",
+    "options": ["extends", "inherits", ":", "base"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "Which symbol is used for single-line comments in C#?",
+    "options": ["//", "/* */", "#", "--"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "Which method is called automatically when an object is created?",
+    "options": ["Main()", "Constructor", "Destructor", "Init()"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "Which keyword is used to define a constant value?",
+    "options": ["final", "readonly", "const", "static"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "Which loop is guaranteed to execute at least once?",
+    "options": ["for", "while", "do-while", "foreach"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "Which keyword is used to handle exceptions in C#?",
+    "options": ["try-catch", "handle", "exception", "catch-try"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "Which type is used for a 64-bit integer?",
+    "options": ["int", "long", "short", "byte"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "Which keyword is used to define an interface?",
+    "options": ["interface", "class", "struct", "abstract"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "Which keyword is used to implement an interface in a class?",
+    "options": ["implements", ":", "interface", "inherit"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "question": "Which collection is ordered and index-based in C#?",
+    "options": ["Array", "List", "Dictionary", "HashSet"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "Which keyword is used to define a read-only field that can be assigned only in constructor?",
+    "options": ["readonly", "const", "final", "static"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "Which operator is used for logical AND?",
+    "options": ["&", "&&", "||", "|"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "Which method converts a string to uppercase?",
+    "options": ["ToUpperCase()", "ToUpper()", "Upper()", "UpperCase()"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "Which keyword is used to define an abstract class?",
+    "options": ["abstract", "interface", "virtual", "base"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "Which operator is used for null-coalescing in C#?",
+    "options": ["??", "?:", "??=", "||"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "Which keyword is used to create a static class?",
+    "options": ["static", "const", "sealed", "abstract"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "question": "Which type stores true or false values?",
+    "options": ["bool", "int", "byte", "char"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "Which keyword prevents a method from being overridden?",
+    "options": ["sealed", "readonly", "final", "static"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "Which operator is used to check equality?",
+    "options": ["=", "==", "===", "!="],
+    "correctAnswer": 1
+  },
+  {
+    "id": 25,
+    "question": "Which keyword is used to define a value type that can contain multiple variables?",
+    "options": ["struct", "class", "record", "enum"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "Which C# feature allows methods to have the same name but different parameters?",
+    "options": ["Overloading", "Overriding", "Polymorphism", "Encapsulation"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "Which keyword allows a derived class to access the base class constructor?",
+    "options": ["super", "base", "this", "parent"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 28,
+    "question": "Which keyword is used to indicate that a method can be overridden?",
+    "options": ["virtual", "override", "abstract", "sealed"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "Which collection stores key-value pairs in C#?",
+    "options": ["Array", "List", "Dictionary", "HashSet"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "Which keyword is used to exit from a loop immediately?",
+    "options": ["exit", "break", "continue", "return"],
+    "correctAnswer": 1
+  }
+]

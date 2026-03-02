@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which HTML tag is used to link an external CSS file?",
+    "options": [
+      "<link>",
+      "<css>",
+      "<style>",
+      "<script>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "Which property is used to change the background color?",
+    "options": ["color", "bgcolor", "background-color", "background"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "Which CSS property controls the text size?",
+    "options": ["font-style", "text-size", "font-size", "text-style"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "How do you make text bold in CSS?",
+    "options": ["font-weight: bold;", "text-style: bold;", "font-style: bold;", "text-weight: bold;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "Which CSS property controls the text color?",
+    "options": ["color", "font-color", "text-color", "font-style"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "question": "How do you display a border around an element?",
+    "options": ["border: 1px solid black;", "border-style: solid;", "border-width: 1px;", "border-color: black;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "How do you make a list horizontal in CSS?",
+    "options": ["display: inline;", "display: block;", "list-style: horizontal;", "float: left;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "Which property is used to change the font of an element?",
+    "options": ["font-family", "font-style", "text-style", "font-type"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "Which property is used to change the spacing between letters?",
+    "options": ["letter-spacing", "text-spacing", "font-spacing", "word-spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "How do you make a list item marker disappear?",
+    "options": ["list-style-type: none;", "marker: none;", "display: none;", "text-decoration: none;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "Which CSS property is used to control the layout of flex items?",
+    "options": ["flex-direction", "justify-content", "align-items", "All of the above"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 13,
+    "question": "Which CSS property is used to control the transparency of an element?",
+    "options": ["visibility", "opacity", "transparent", "alpha"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "How do you add a shadow to text?",
+    "options": ["text-shadow: 2px 2px black;", "shadow: text;", "font-shadow: black 2px 2px;", "text-decoration: shadow;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "question": "Which property is used to set the space between lines of text?",
+    "options": ["line-height", "text-spacing", "spacing", "line-spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "Which property is used to add spacing inside an element?",
+    "options": ["padding", "margin", "spacing", "border-spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "Which property is used to add spacing outside an element?",
+    "options": ["margin", "padding", "spacing", "border-spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "Which property is used to control the visibility of an element?",
+    "options": ["display", "visibility", "opacity", "hidden"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "Which property is used to control the flow of floated elements?",
+    "options": ["clear", "float", "overflow", "display"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "Which property controls the background image repetition?",
+    "options": ["background-repeat", "background-image", "background-position", "background-size"],
+    "correctAnswer": 0
+  }
+]

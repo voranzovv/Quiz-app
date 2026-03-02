@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./scripts/home.js"></script>
-    <!-- <script src="script.js" type="module"></script> -->
+    <script src="./scripts/home.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
   </head>
 
   <body>
     <main class="main-container">
       <!-- Home / Dashboard section  -->
       <!-- ================= HEADER ================= -->
-      <section class="home-section" >
+      <section class="home-section">
         <header class="container-header">
           <img src="./images/avatar.png" alt="User Avatar" class="avatar" />
           <div class="greeting">
@@ -45,28 +45,28 @@
         <section class="discover">
           <h2>Discover</h2>
 
-          <div class="discover-items" id="discover-JavaScript" >
-            <article class="discover-item" onclick="startQuiz('JavaScript')">
+          <div class="discover-items" id="discover-JavaScript">
+            <article class="discover-item" id="discover-item">
               <img src="./images/js.avif" alt="JavaScript Logo" />
               <p>JavaScript</p>
             </article>
 
-            <article class="discover-item" onclick="startQuiz('HTML')">
+            <article class="discover-item">
               <img src="./images/html.jpeg" alt="HTML Logo" />
               <p>HTML</p>
             </article>
 
-            <article class="discover-item" onclick="startQuiz('CSS')">
+            <article class="discover-item">
               <img src="./images/css.png" alt="CSS Logo" />
               <p>CSS</p>
             </article>
 
-            <article class="discover-item" onclick="startQuiz('C#')">
+            <article class="discover-item">
               <img src="./images/c-sharp.png" alt="C# Logo" />
               <p>C#</p>
             </article>
 
-            <article class="discover-item" onclick="startQuiz('Node.js')">
+            <article class="discover-item">
               <img src="./images/node.jpg" alt="Node.js Logo" />
               <p>Node.js</p>
             </article>
@@ -130,7 +130,7 @@
       </section>
 
       <!-- ================= QUIZ SECTION ================= -->
-      <section class="quiz-section" id="quiz-section" >
+      <section class="quiz-section" id="quiz-section">
         <div class="quiz-card">
           <div class="quiz-header">
             <h2>Quiz Time 🚀</h2>
@@ -160,9 +160,24 @@
             </div>
           </div>
 
-          <div class="question" id="question"></div>
-          <div class="answers"></div>
-          <div class="feedback" id="feedback"></div>
+          <div class="question" id="question">
+            Who is the founder of JavaScript?
+          </div>
+          <div class="recent-quiz-items" id="options-container">
+            <!-- <div class="recent-quiz-item">
+              <input
+                type="radio"
+                id="option1"
+                name="options"
+                value="option1"
+                class="answers"
+              />
+              <label for="option1" id="option" class="option"
+                >Option 1</label
+              >
+              <div class="feedback" id="feedback"></div>
+            </div> -->
+          </div>
 
           <button id="next-question" class="next-btn" disabled>
             Next Question →
@@ -171,7 +186,7 @@
       </section>
 
       <!-- ================= RESULT SECTION ================= -->
-      <section class="result-section" id="result-section" >
+      <section class="result-section" id="result-section">
         <div class="quiz-card">
           <h2>🎉 Quiz Completed!</h2>
           <p id="final-score"></p>

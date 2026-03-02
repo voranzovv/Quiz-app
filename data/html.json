@@ -1,0 +1,622 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyperlinks and Text Markup Language",
+      "Hyper Text Markup Language",
+      "Home Tool Markup Language",
+      "Hyperlinking Text Marking Language"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which HTML element is used for the largest heading?",
+    "options": ["<head>", "<h6>", "<h1>", "<heading>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "Which HTML element defines a paragraph?",
+    "options": ["<para>", "<p>", "<text>", "<paragraph>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "Which attribute is used to link an external CSS file?",
+    "options": ["src", "href", "rel", "link"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "Which tag creates a clickable link?",
+    "options": ["<a>", "<link>", "<button>", "<href>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "Which element inserts an image?",
+    "options": ["<image>", "<img>", "<src>", "<picture>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "How do you create an ordered list?",
+    "options": ["<ol>", "<ul>", "<list>", "<dl>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "Which attribute specifies alternative text for an image?",
+    "options": ["alt", "title", "src", "text"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "Which element defines the footer of a page?",
+    "options": ["<bottom>", "<footer>", "<section>", "<foot>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "question": "Which tag makes text bold?",
+    "options": ["<b>", "<strong>", "Both <b> and <strong>", "<bold>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "Which character is used to indicate an HTML tag?",
+    "options": ["/", "<", "*", "&"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["<break>", "<br>", "<lb>", "<newline>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "Which HTML attribute specifies an inline style?",
+    "options": ["class", "style", "font", "styles"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "Which element defines navigation links?",
+    "options": ["<nav>", "<menu>", "<navigate>", "<links>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "question": "HTML stands for?",
+    "options": [
+      "HighText Machine Language",
+      "HyperText and links Markup Language",
+      "HyperText Markup Language",
+      "None of these"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "question": "The <title> element is placed within the?",
+    "options": ["<body>", "<head>", "<footer>", "<section>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "Which element defines a section?",
+    "options": ["<section>", "<div>", "<group>", "<article>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "What does the <em> tag do?",
+    "options": ["Italicizes text", "Bold text", "Underline text", "Monospace text"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "Which attribute is used to specify the destination URL of a link?",
+    "options": ["href", "src", "link", "url"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "Which tag is used to define a table row?",
+    "options": ["<th>", "<tr>", "<td>", "<table>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 22,
+    "question": "Which tag is used to define a table header?",
+    "options": ["<td>", "<th>", "<tr>", "<table>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "question": "Which tag defines a division or section?",
+    "options": ["<div>", "<span>", "<section>", "<group>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "Which HTML tag is used to display a picture on a webpage?",
+    "options": ["<image>", "<photo>", "<img>", "<pic>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 25,
+    "question": "Which tag is used to define an option in a dropdown list?",
+    "options": ["<options>", "<option>", "<select>", "<input>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 26,
+    "question": "Which input attribute defines a button?",
+    "options": ["type='submit'", "type='button'", "type='text'", "type='radio'"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 27,
+    "question": "Which tag is used to define a form?",
+    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "Which tag is used to create a checkbox?",
+    "options": ["<input type='checkbox'>", "<checkbox>", "<check>", "<input>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "Which element is used to group related elements within a form?",
+    "options": ["<group>", "<fieldset>", "<div>", "<section>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 30,
+    "question": "Which tag is used to create a multi‑line text input?",
+    "options": ["<textarea>", "<input type='multiline'>", "<input type='text'>", "<text>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "Which tag can define text that should appear in bold by default?",
+    "options": ["<b>", "<strong>", "<bold>", "<em>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 32,
+    "question": "Which HTML tag is used for creating a dropdown list?",
+    "options": ["<drop>", "<select>", "<list>", "<option>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "question": "Which HTML attribute specifies that an input field must be filled out before submitting?",
+    "options": ["required", "placeholder", "validate", "checked"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "Which tag defines a caption for a table?",
+    "options": ["<title>", "<caption>", "<header>", "<tabletitle>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 35,
+    "question": "Which attribute specifies that an input should automatically get focus when the page loads?",
+    "options": ["focus", "autofocus", "active", "default"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "question": "Which tag is used to define a list item?",
+    "options": ["<li>", "<item>", "<ul>", "<list>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "question": "Which tag is used to define the header for a document or section?",
+    "options": ["<head>", "<header>", "<hgroup>", "<section>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 38,
+    "question": "Which doctype declaration is correct for HTML5?",
+    "options": [
+      "<!DOCTYPE HTML>",
+      "<!DOCTYPE html5>",
+      "<doctype html>",
+      "<!doctype HTML PUBLIC>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 39,
+    "question": "Which tag is used to create a horizontal line?",
+    "options": ["<line>", "<hr>", "<break>", "<separator>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "question": "In HTML, CSS is used for?",
+    "options": [
+      "Adding structure",
+      "Adding styles",
+      "Adding interactivity",
+      "Adding links"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 41,
+    "question": "Which tag is used to embed JavaScript?",
+    "options": ["<js>", "<script>", "<code>", "<javascript>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 42,
+    "question": "Which attribute is used to specify the width of an image?",
+    "options": ["width", "size", "length", "imgwidth"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "Which attribute is used to specify the height of an image?",
+    "options": ["size", "height", "imgheight", "length"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 44,
+    "question": "Which HTML tag is used to define emphasized text?",
+    "options": ["<i>", "<em>", "<italic>", "<stress>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 45,
+    "question": "The <meta> tag is used for?",
+    "options": ["Metadata about the document", "Styling text", "Adding images", "Creating links"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "Which attribute specifies a unique identifier for an element?",
+    "options": ["class", "id", "key", "name"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 47,
+    "question": "Which tag defines a block of navigation links?",
+    "options": ["<nav>", "<menu>", "<navigation>", "<links>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 48,
+    "question": "Which tag defines a clickable button?",
+    "options": ["<button>", "<input>", "<link>", "<a>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 49,
+    "question": "Which attribute specifies the text shown in a tooltip when a mouse moves over an element?",
+    "options": ["title", "alt", "hover", "tooltip"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "Which tag is used to define a caption for the <figure> element?",
+    "options": ["<caption>", "<figcaption>", "<label>", "<legend>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 51,
+    "question": "Which tag defines a section of content that is self‑contained?",
+    "options": ["<section>", "<article>", "<div>", "<aside>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 52,
+    "question": "Which attribute sets a placeholder text in an input field?",
+    "options": ["hint", "placeholder", "title", "label"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 53,
+    "question": "Which tag defines a numbered list?",
+    "options": ["<ul>", "<ol>", "<list>", "<dl>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 54,
+    "question": "Which tag defines a description list?",
+    "options": ["<dl>", "<ul>", "<ol>", "<list>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 55,
+    "question": "Which element provides a way to group inline elements?",
+    "options": ["<div>", "<span>", "<section>", "<group>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 56,
+    "question": "Which input type is used for email addresses?",
+    "options": ["text", "email", "mail", "address"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 57,
+    "question": "Which tag defines a footer section?",
+    "options": ["<footer>", "<bottom>", "<end>", "<foot>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 58,
+    "question": "Which attribute specifies a default value for an input field?",
+    "options": ["value", "default", "placeholder", "init"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 59,
+    "question": "Which tag defines keyboard input?",
+    "options": ["<ks>", "<kbd>", "<input>", "<type>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 60,
+    "question": "Which tag is used to represent sample output from a program?",
+    "options": ["<code>", "<samp>", "<pre>", "<output>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 61,
+    "question": "Which tag is used to define pre‑formatted text?",
+    "options": ["<pre>", "<code>", "<plaintext>", "<fixed>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 62,
+    "question": "Which attribute is used to specify multiple file selection?",
+    "options": ["multiple", "multi", "files", "selectmultiple"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 63,
+    "question": "Which tag defines the title of a table?",
+    "options": ["<tabletitle>", "<caption>", "<title>", "<header>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 64,
+    "question": "Which tag represents a document section that is tangentially related to the content?",
+    "options": ["<aside>", "<section>", "<article>", "<div>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 65,
+    "question": "Which tag is used to represent the smallest heading?",
+    "options": ["<h6>", "<h1>", "<h3>", "<h5>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 66,
+    "question": "Which attribute specifies an input field should be read‑only?",
+    "options": ["readonly", "disabled", "locked", "fixed"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 67,
+    "question": "Which tag defines a container for external resources like scripts?",
+    "options": ["<include>", "<import>", "<script>", "<link>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 68,
+    "question": "Which HTML element is used to specify a visible heading?",
+    "options": ["<h1> to <h6>", "<heading>", "<title>", "<header>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 69,
+    "question": "Which tag is used to define an inline frame?",
+    "options": ["<frame>", "<iframe>", "<inline>", "<embed>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 70,
+    "question": "What is the correct HTML element for inserting a video?",
+    "options": ["<video>", "<movie>", "<media>", "<vid>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 71,
+    "question": "Which attribute specifies the URL of a video file?",
+    "options": ["src", "video", "href", "link"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 72,
+    "question": "Which tag is used to display text that has been deleted?",
+    "options": ["<del>", "<strike>", "<s>", "<remove>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 73,
+    "question": "Which tag is used to define alternate content for browsers that do not support multimedia?",
+    "options": ["<noframe>", "<alternative>", "<fallback>", "<track>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 74,
+    "question": "Which attribute is used to specify the text direction?",
+    "options": ["dir", "direction", "rtl", "lang"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 75,
+    "question": "Which tag defines the document head?",
+    "options": ["<head>", "<header>", "<title>", "<meta>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 76,
+    "question": "Which attribute specifies the HTTP‑equiv?",
+    "options": ["http", "equiv", "content", "http‑equiv"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 77,
+    "question": "Which tag specifies inline frames?",
+    "options": ["<iframe>", "<frame>", "<embed>", "<object>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 78,
+    "question": "Which tag is used for inserting data from a server?",
+    "options": ["<server>", "<data>", "<object>", "<embed>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 79,
+    "question": "Which input type is used for a number?",
+    "options": ["text", "number", "numeric", "digit"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 80,
+    "question": "Which attribute specifies the media type of the linked document?",
+    "options": ["type", "media", "format", "mime"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 81,
+    "question": "Which tag is used to define a client‑side script?",
+    "options": ["<script>", "<code>", "<client>", "<js>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 82,
+    "question": "Which attribute is used to define a hyperlink that opens in a new tab?",
+    "options": ["target='_blank'", "open='new'", "window='new'", "tab='true'"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 83,
+    "question": "Which element defines contact information?",
+    "options": ["<contact>", "<address>", "<info>", "<footer>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 84,
+    "question": "Which tag is used to define a quote?",
+    "options": ["<quote>", "<q>", "<blockquote>", "<c>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 85,
+    "question": "Which tag is used for a line break without extra space?",
+    "options": ["<br />", "<lb>", "<break>", "<newline>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 86,
+    "question": "Which tag defines an area inside an image map?",
+    "options": ["<area>", "<maparea>", "<imgarea>", "<imagemap>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 87,
+    "question": "Which attribute specifies coordinates for an area in an image map?",
+    "options": ["coords", "coordinates", "area", "points"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 88,
+    "question": "Which tag is used for the main content of a document?",
+    "options": ["<main>", "<body>", "<content>", "<section>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 89,
+    "question": "Which attribute defines a tooltip text?",
+    "options": ["title", "alt", "hover", "tooltip"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 90,
+    "question": "Which HTML tag is used to define bold text?",
+    "options": ["<strong>", "<b>", "<bold>", "Both <strong> and <b>"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 91,
+    "question": "Which tag is used to define an embedded application?",
+    "options": ["<app>", "<embed>", "<application>", "<object>"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 92,
+    "question": "Which tag is used for captions in media elements?",
+    "options": ["<caption>", "<track>", "<media>", "<subtitle>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 93,
+    "question": "Which tag is used to define variable text?",
+    "options": ["<var>", "<span>", "<text>", "<variable>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 94,
+    "question": "Which tag defines self‑closing content?",
+    "options": ["<br>", "<hr>", "<img>", "All of these"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 95,
+    "question": "Which attribute is used to define multiple email addresses?",
+    "options": ["multiple", "emails", "email‑list", "multiemail"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 96,
+    "question": "Which tag defines a semantic block of quoted text?",
+    "options": ["<q>", "<quote>", "<blockquote>", "<qt>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 97,
+    "question": "Which input type defines a password field?",
+    "options": ["text", "password", "secret", "pass"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 98,
+    "question": "Which tag defines the base URL for relative URLs in a document?",
+    "options": ["<base>", "<link>", "<meta>", "<url>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 99,
+    "question": "Which tag is used to define a label for input elements?",
+    "options": ["<lbl>", "<label>", "<inputlabel>", "<caption>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 100,
+    "question": "Which element is used to play audio files?",
+    "options": ["<audio>", "<sound>", "<media>", "<music>"],
+    "correctAnswer": 0
+  }
+]

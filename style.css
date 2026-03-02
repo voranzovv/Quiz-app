@@ -225,13 +225,13 @@ body {
 }
 
 /* ================= ANSWERS ================= */
-.answers {
+/* .answers {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
-.answer {
+/* .answer {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -240,17 +240,27 @@ body {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
+} */
 
-.answer input[type="radio"] {
+/* .answer input[type="radio"] {
   accent-color: #fff;
   cursor: pointer;
-}
+} */
 
-.answer:hover {
+/* .answer:hover {
   background: rgba(255, 255, 255, 0.35);
-}
+} */
 
+/* options */
+.option {
+  display: block;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color:#333;
+}
 /* ================= FEEDBACK ================= */
 .feedback {
   font-size: 16px;
