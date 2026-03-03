@@ -1,4 +1,4 @@
-import { getRandomQuestions ,loadQuestion} from "../script.js";
+import { getRandomQuestions ,loadQuestion} from "./script.js";
 let homeSection;
 let quizSection;
 let resultSection;
