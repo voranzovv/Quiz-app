@@ -33,6 +33,7 @@ export function loadQuestion(questions) {
 
     const wrapper = document.createElement("div");
   wrapper.classList.add("recent-quiz-item");
+  wrapper.id = `recent-quiz-item-${index + 1}`;
 
   const input = document.createElement("input");
   input.type = "radio";
@@ -57,20 +58,30 @@ export function loadQuestion(questions) {
     const optionInput = document.getElementById(optionId);
     optionInput.addEventListener("change", () => {
       console.log(`Option ${index + 1} selected: ${option}`);
-      // selectOption(index);
+      // checkAnswer(currentQuestion, index);
+      selectAnswer(currentQuestion, index);
+      
     });
   });
 }
 
-// export function selectOption(selectedIndex) {
-//   const question = questions[currentQuestionIndex];
-//   if (selectedIndex === question.correctAnswer) {
-//     score++;
-//   }
-//   currentQuestionIndex++;
-//   if (currentQuestionIndex < questions.length) {
-//     loadQuestion(currentQuestionIndex);
-//   } else {
-//     showResult();
-//   }
-// } 
+function selectAnswer(question, index) {
+  const feedback = document.getElementById(`recent-quiz-item-${index + 1}`);
+
+  if (question.correctAnswer === index) {
+    feedback.style.backgroundColor = "#d4edda";
+    feedback.style.color = "#155724";
+    feedback.style.border = "2px solid #28a745";
+  } else {
+    feedback.style.backgroundColor = "#f8d7da";
+    feedback.style.color = "#721c24";
+    feedback.style.border = "2px solid #dc3545";
+  }
+}
+
+
+
+
+
+
+
