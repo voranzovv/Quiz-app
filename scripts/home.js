@@ -28,7 +28,7 @@ window.onload= () => {
 //load quiz data
 async function loadQuizData(subject) {
   // fetch("data/javaScript.json")
-  const res =  await fetch(`data/${subject.toLowerCase()}.json`);
+  const res =  await fetch(`./data/${subject.toLowerCase()}.json`);
   questions = getRandomQuestions(await res.json());
   console.log("Loaded quiz data for subject:", subject, "Questions:", questions);
 }
