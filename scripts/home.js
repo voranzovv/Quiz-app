@@ -1,13 +1,13 @@
-import { getRandomQuestions ,loadQuestion} from "./script.js";
+import { getRandomQuestions, loadQuestion } from "./script.js";
 let homeSection;
 let quizSection;
 let resultSection;
-let questions= [];
-let subject = "javascript"; 
+let questions = [];
+let subject = "javascript";
 let currentQuestionIndex = 0;
 let score = 0;
 
-window.onload= () => {
+window.onload = () => {
   homeSection = document.querySelector(".home-section");
   quizSection = document.querySelector(".quiz-section");
   resultSection = document.querySelector(".result-section");
@@ -23,10 +23,35 @@ window.onload= () => {
       // console.log("Clicked quiz item for subject:", subject);
     });
   });
+  //next button
+  const nextButton = document.getElementById("next-question");
+  nextButton.addEventListener("click", async () => {
+    //add score
+    if (
+      questions[currentQuestionIndex].correctAnswer ===
+      questions[currentQuestionIndex].userAnswer
+    ) {
+      console.log(questions[currentQuestionIndex]);
+      score++;
+    }
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      await loadQuestion(questions, currentQuestionIndex);
+      console.log("Current question index:", currentQuestionIndex);
+    } else {
+      console.log("Quiz completed!");
+      //display score
+      document.getElementById("final-score").textContent =
+        `You scored ${score} out of ${questions.length}!`;
+      showResult();
+    }
+  });
 };
 
 //load quiz data
 async function loadQuizData(subject) {
+  // able to click next button
+  
   try {
     const res = await fetch(`./data/${subject.toLowerCase()}.json`);
 
@@ -38,7 +63,6 @@ async function loadQuizData(subject) {
     questions = getRandomQuestions(data);
 
     console.log("Loaded quiz data:", questions);
-
   } catch (error) {
     console.error("Quiz failed to load:", error);
   }
@@ -48,12 +72,13 @@ function showHome() {
   homeSection.classList.remove("hidden");
   quizSection.classList.add("hidden");
   resultSection.classList.add("hidden");
-  // homeSection.classList.remove("hidden");
-  // quizSection.classList.remove("hidden");
-  // resultSection.classList.add("hidden");
 }
 
 async function startQuiz(subject) {
+  // const nextButton = document.getElementById("next-question");
+  // nextButton.disabled = true;
+  currentQuestionIndex = 0;
+  score = 0; 
   // console.log("Starting quiz for subject:", subject);
   await loadQuizData(subject);
 
@@ -62,6 +87,7 @@ async function startQuiz(subject) {
   resultSection.classList.add("hidden");
 
   await loadQuestion(questions, currentQuestionIndex);
+
 }
 
 function showResult() {
