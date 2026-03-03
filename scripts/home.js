@@ -27,10 +27,21 @@ window.onload= () => {
 
 //load quiz data
 async function loadQuizData(subject) {
-  // fetch("data/javaScript.json")
-  const res =  await fetch(`./data/${subject.toLowerCase()}.json`);
-  questions = getRandomQuestions(await res.json());
-  console.log("Loaded quiz data for subject:", subject, "Questions:", questions);
+  try {
+    const res = await fetch(`./data/${subject.toLowerCase()}.json`);
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+
+    const data = await res.json();
+    questions = getRandomQuestions(data);
+
+    console.log("Loaded quiz data:", questions);
+
+  } catch (error) {
+    console.error("Quiz failed to load:", error);
+  }
 }
 
 function showHome() {
