@@ -103,3 +103,64 @@ function selectAnswer(question, index) {
       `${((currentQuestionNumber + 1) / totalQuestions) * 100}%`;
   });
 }
+
+//recent quiz data store in localstorage
+export function storeRecentQuizData(subject) {
+  const recentQuizzes =
+    JSON.parse(localStorage.getItem("recentQuizzes")) || [];
+
+  // Remove existing entry of same subject
+  const filtered = recentQuizzes.filter(
+    (quiz) => quiz.subject !== subject
+  );
+
+  // Add new one at top
+  const updated = [
+    { subject: subject, date: new Date() },
+    ...filtered,
+  ];
+
+  // limit to 5 recent quizzes
+  const limited = updated.slice(0, 5);
+
+  localStorage.setItem("recentQuizzes", JSON.stringify(limited));
+
+  console.log("Stored recent quiz data:", limited);
+}
+
+export function showRecentQuizzes() {
+  const recentQuizzes =
+    JSON.parse(localStorage.getItem("recentQuizzes")).slice(0, 5) || [];
+  recentQuizzes.forEach((quiz) => {
+    const el = `
+            <article class="recent-quiz-item">
+              <img
+                src="./images/${quiz.subject}.png"
+                alt="${quiz.subject} Quiz"
+                class="recent-quiz-item-image"
+              />
+              <div>
+                <h3>${quiz.subject} Quiz</h3>
+                <p>Last Attempt: ${dateFormat(quiz.date)}</p>
+              </div>
+            </article>`;
+    document.getElementById("recent-quiz-items").innerHTML += el;
+  });
+}
+function dateFormat(date){
+  console.log(Date(), date);
+  const newDate = new Date(date);
+  const today = new Date();
+
+  //today time
+if (newDate.toDateString() === today.toDateString()) {
+  return newDate.toLocaleTimeString();
+}
+
+  //yesterday
+if (newDate.toDateString() === today.toDateString() - 1) {
+  return "Yesterday";
+}
+//days ago
+return newDate.toLocaleDateString();
+}

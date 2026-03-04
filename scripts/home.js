@@ -1,9 +1,9 @@
-import { getRandomQuestions, loadQuestion } from "./script.js";
+import { getRandomQuestions, loadQuestion,storeRecentQuizData,showRecentQuizzes } from "./script.js";
 let homeSection;
 let quizSection;
 let resultSection;
 let questions = [];
-let subject = "javascript";
+let subject = "";
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -12,6 +12,7 @@ window.onload = () => {
   quizSection = document.querySelector(".quiz-section");
   resultSection = document.querySelector(".result-section");
   // loadQuizData(subject);
+
   showHome();
   // Add event listeners for quiz items
   const quizItems = document.querySelectorAll(".discover-item");
@@ -23,6 +24,9 @@ window.onload = () => {
       // console.log("Clicked quiz item for subject:", subject);
     });
   });
+
+  // show recent quiz list
+  showRecentQuizzes();
   //next button
   const nextButton = document.getElementById("next-question");
   nextButton.addEventListener("click", async () => {
@@ -50,8 +54,8 @@ window.onload = () => {
 
 //load quiz data
 async function loadQuizData(subject) {
-  // able to click next button
-  
+  //store recent quiz data to localstorage
+        storeRecentQuizData(subject);
   try {
     const res = await fetch(`./data/${subject.toLowerCase()}.json`);
 
@@ -62,7 +66,7 @@ async function loadQuizData(subject) {
     const data = await res.json();
     questions = getRandomQuestions(data);
 
-    console.log("Loaded quiz data:", questions);
+    console.log("Loaded quiz data:", subject);
   } catch (error) {
     console.error("Quiz failed to load:", error);
   }
@@ -95,3 +99,7 @@ function showResult() {
   quizSection.classList.add("hidden");
   resultSection.classList.remove("hidden");
 }
+
+
+
+
