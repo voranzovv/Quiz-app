@@ -156,11 +156,56 @@ function dateFormat(date){
 if (newDate.toDateString() === today.toDateString()) {
   return newDate.toLocaleTimeString();
 }
-
   //yesterday
 if (newDate.toDateString() === today.toDateString() - 1) {
   return "Yesterday";
 }
 //days ago
 return newDate.toLocaleDateString();
+}
+export function displayGreeting() {
+  const hour = new Date().getHours();
+  const greeting = hour < 12 ? "Good Morning!" : "Good Afternoon!";
+  document.querySelector(".greeting h1").textContent = greeting;
+  
+}
+
+export function calculateStreak() {
+  const data = localStorage.getItem("recentQuizzes")
+    ? JSON.parse(localStorage.getItem("recentQuizzes"))
+    : [];
+
+  if (data.length === 0) return 0;
+
+  // Convert dates and remove duplicates per day
+  const uniqueDays = [...new Set(
+    data.map((quiz) =>
+      new Date(quiz.date).toDateString()
+    )
+  )];
+
+  // Sort newest first
+  uniqueDays.sort(
+    (a, b) => new Date(b) - new Date(a)
+  );
+
+  let streak = 0;
+  let currentDate = new Date();
+
+  for (let i = 0; i < uniqueDays.length; i++) {
+    const quizDate = new Date(uniqueDays[i]);
+
+    // Compare expected date
+    if (
+      quizDate.toDateString() ===
+      currentDate.toDateString()
+    ) {
+      streak++;
+      currentDate.setDate(currentDate.getDate() - 1); // go back 1 day
+    } else {
+      break; // streak stops
+    }
+  }
+console.log(streak);
+  return streak;
 }

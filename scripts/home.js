@@ -1,4 +1,12 @@
-import { getRandomQuestions, loadQuestion,storeRecentQuizData,showRecentQuizzes } from "./script.js";
+import {
+  getRandomQuestions,
+  loadQuestion,
+  storeRecentQuizData,
+  showRecentQuizzes,
+  displayGreeting,
+  calculateStreak,
+} from "./script.js";
+
 let homeSection;
 let quizSection;
 let resultSection;
@@ -12,7 +20,8 @@ window.onload = () => {
   quizSection = document.querySelector(".quiz-section");
   resultSection = document.querySelector(".result-section");
   // loadQuizData(subject);
-
+  displayGreeting();
+  document.getElementById("streak").textContent = calculateStreak();
   showHome();
   // Add event listeners for quiz items
   const quizItems = document.querySelectorAll(".discover-item");
@@ -55,7 +64,7 @@ window.onload = () => {
 //load quiz data
 async function loadQuizData(subject) {
   //store recent quiz data to localstorage
-        storeRecentQuizData(subject);
+  storeRecentQuizData(subject);
   try {
     const res = await fetch(`./data/${subject.toLowerCase()}.json`);
 
@@ -82,7 +91,7 @@ async function startQuiz(subject) {
   // const nextButton = document.getElementById("next-question");
   // nextButton.disabled = true;
   currentQuestionIndex = 0;
-  score = 0; 
+  score = 0;
   // console.log("Starting quiz for subject:", subject);
   await loadQuizData(subject);
 
@@ -91,7 +100,6 @@ async function startQuiz(subject) {
   resultSection.classList.add("hidden");
 
   await loadQuestion(questions, currentQuestionIndex);
-
 }
 
 function showResult() {
@@ -99,7 +107,3 @@ function showResult() {
   quizSection.classList.add("hidden");
   resultSection.classList.remove("hidden");
 }
-
-
-
-
