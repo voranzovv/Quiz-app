@@ -1,3 +1,5 @@
+let currentQuestionNumber = 0;
+let totalQuestions = 20;
 export function getRandomQuestions(quizData) {
   if (!quizData || quizData.length === 0) {
     console.error("Quiz data is not loaded or empty.");
@@ -8,13 +10,14 @@ export function getRandomQuestions(quizData) {
   return shuffled.slice(0, 20);
 }
 
-//load quiz data
-
-//load question into html elements
+//load question into html elements!
 export function loadQuestion(questions, currentQuestionIndex) {
+  currentQuestionNumber = currentQuestionIndex;
+  questions = questions;
+  console.log("Loading question:", questions.length);
   //disable for every new question
   const nextButton = document.getElementById("next-question");
-  nextButton.disabled = true; 
+  nextButton.disabled = true;
 
   const questionElement = document.getElementById("question");
   const optionsElement = document.getElementById("options-container");
@@ -25,7 +28,7 @@ export function loadQuestion(questions, currentQuestionIndex) {
     return;
   }
 
-  const currentQuestion = questions[currentQuestionIndex]; 
+  const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   optionsElement.innerHTML = ""; // Clear previous options
 
@@ -85,7 +88,9 @@ function selectAnswer(question, index) {
     input.disabled = true;
   });
   //show correct answer
-  const correctOption = document.getElementById(`recent-quiz-item-${question.correctAnswer + 1}`);
+  const correctOption = document.getElementById(
+    `recent-quiz-item-${question.correctAnswer + 1}`,
+  );
   correctOption.style.backgroundColor = "#d4edda";
   correctOption.style.color = "#155724";
   correctOption.style.border = "2px solid #28a745";
@@ -93,8 +98,8 @@ function selectAnswer(question, index) {
   // able to click next button
   const nextButton = document.getElementById("next-question");
   nextButton.disabled = false;
-
+  nextButton.addEventListener("click", () => {
+    document.getElementById("progress-bar-fill").style.width =
+      `${((currentQuestionNumber + 1) / totalQuestions) * 100}%`;
+  });
 }
-
-
-
