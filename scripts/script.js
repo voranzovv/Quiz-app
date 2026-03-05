@@ -77,10 +77,14 @@ function selectAnswer(question, index) {
     feedback.style.backgroundColor = "#d4edda";
     feedback.style.color = "#155724";
     feedback.style.border = "2px solid #28a745";
+    const audio = new Audio("../sounds/correct.mp3");
+    audio.play();
   } else {
     feedback.style.backgroundColor = "#f8d7da";
     feedback.style.color = "#721c24";
     feedback.style.border = "2px solid #dc3545";
+      const audio = new Audio("../sounds/wrong.mp3");
+      audio.play();
   }
   // disable all inputs
   const inputs = document.querySelectorAll(".answers");
