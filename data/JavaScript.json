@@ -8,7 +8,8 @@
       "string",
       "float"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "var is used to declare variables in JavaScript (older syntax, also let/const are modern)."
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
       "Google",
       "IBM"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "JavaScript was created by Netscape."
   },
   {
     "id": 3,
@@ -30,51 +32,56 @@
       "Digital Ordinance Model",
       "Desktop Object Management"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "DOM stands for Document Object Model, representing webpage structure."
   },
   {
     "id": 4,
-    "question": "Which symbol is used for single-line comments?",
+    "question": "Which symbol is used for single-line comments in JavaScript?",
     "options": [
       "//",
       "#",
       "<!-- -->",
       "**"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "JavaScript uses // for single-line comments."
   },
   {
     "id": 5,
-    "question": "Which method converts JSON to a JavaScript object?",
+    "question": "Which method converts JSON into a JavaScript object?",
     "options": [
       "JSON.parse()",
       "JSON.stringify()",
       "JSON.toObject()",
       "JSON.convert()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "JSON.parse() converts JSON string into an object."
   },
   {
     "id": 6,
-    "question": "What is the output of typeof null? ",
+    "question": "What is the output of typeof null in JavaScript?",
     "options": [
       "null",
       "object",
       "undefined",
       "number"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "typeof null returns 'object' due to a long-standing JavaScript bug."
   },
   {
     "id": 7,
-    "question": "Which operator is strict equality?",
+    "question": "Which operator is used for strict equality?",
     "options": [
       "==",
       "=",
       "===",
       "!="
     ],
-    "correctAnswer": 2
+    "correctAnswer": 2,
+    "explanation": "=== checks both value and type."
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
       "shift()",
       "unshift()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "push() adds elements at the end of an array."
   },
   {
     "id": 9,
@@ -96,1007 +104,259 @@
       "static",
       "define"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "let creates block-scoped variables."
   },
   {
     "id": 10,
-    "question": "How do you write an arrow function?",
+    "question": "Which syntax is used for arrow functions?",
     "options": [
       "function => {}",
       "() => {}",
       "=> () {}",
       "function() => {}"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "Arrow functions use () => {} syntax."
   },
   {
     "id": 11,
-    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "question": "Which keyword is used to declare constants?",
     "options": [
+      "const",
+      "let",
       "var",
-      "int",
-      "string",
-      "float"
+      "define"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "const is used for values that cannot be reassigned."
   },
   {
     "id": 12,
-    "question": "Which company developed JavaScript?",
+    "question": "Which method converts a JavaScript object into JSON?",
     "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.toJSON()"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "JSON.stringify() converts objects to JSON strings."
   },
   {
     "id": 13,
-    "question": "What does DOM stand for?",
+    "question": "Which array method removes the last element?",
     "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
+      "pop()",
+      "push()",
+      "shift()",
+      "slice()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "pop() removes the last element of an array."
   },
   {
     "id": 14,
-    "question": "Which symbol is used for single-line comments?",
+    "question": "Which method removes the first element of an array?",
     "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
+      "shift()",
+      "pop()",
+      "unshift()",
+      "slice()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "shift() removes the first element."
   },
   {
     "id": 15,
-    "question": "Which method converts JSON to a JavaScript object?",
+    "question": "Which keyword is used for condition checking?",
     "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
+      "if",
+      "loop",
+      "case",
+      "check"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "if is used for conditional statements."
   },
   {
     "id": 16,
-    "question": "What is the output of typeof null? ",
+    "question": "Which loop runs at least once?",
     "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
+      "for",
+      "while",
+      "do-while",
+      "foreach"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2,
+    "explanation": "do-while executes at least once."
   },
   {
     "id": 17,
-    "question": "Which operator is strict equality?",
+    "question": "Which method is used to join array elements into a string?",
     "options": [
-      "==",
-      "=",
-      "===",
-      "!="
+      "join()",
+      "concat()",
+      "merge()",
+      "combine()"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0,
+    "explanation": "join() combines array elements into a string."
   },
   {
     "id": 18,
-    "question": "Which method adds an element to the end of an array?",
+    "question": "Which keyword is used to define functions?",
     "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
+      "function",
+      "def",
+      "method",
+      "fun"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "function keyword is used to define functions."
   },
   {
     "id": 19,
-    "question": "Which keyword creates a block-scoped variable?",
+    "question": "Which method finds the length of a string?",
     "options": [
-      "var",
-      "let",
-      "static",
-      "define"
+      "length",
+      "size()",
+      "count()",
+      "len()"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0,
+    "explanation": "length property returns string size."
   },
   {
     "id": 20,
-    "question": "How do you write an arrow function?",
+    "question": "Which symbol is used for template literals?",
     "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
+      "",
+      ", ``, ''",
+      "()",
+      "[]"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "Template literals use backticks ``."
   },
   {
     "id": 21,
-    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "question": "Which method finds an element in an array?",
     "options": [
-      "var",
-      "int",
-      "string",
-      "float"
+      "find()",
+      "search()",
+      "locate()",
+      "indexOfOnly()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "find() returns the first matching element."
   },
   {
     "id": 22,
-    "question": "Which company developed JavaScript?",
+    "question": "Which method returns the index of an element?",
     "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
+      "indexOf()",
+      "find()",
+      "search()",
+      "position()"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0,
+    "explanation": "indexOf() returns position of an element."
   },
   {
     "id": 23,
-    "question": "What does DOM stand for?",
+    "question": "Which keyword prevents redeclaration of a variable?",
     "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
+      "let",
+      "var",
+      "int",
+      "static"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "let prevents redeclaration in the same scope."
   },
   {
     "id": 24,
-    "question": "Which symbol is used for single-line comments?",
+    "question": "Which method executes after a delay?",
     "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
+      "setTimeout()",
+      "setInterval()",
+      "delay()",
+      "wait()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "setTimeout runs code after a delay."
   },
   {
     "id": 25,
-    "question": "Which method converts JSON to a JavaScript object?",
+    "question": "Which method repeats execution continuously?",
     "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
+      "setInterval()",
+      "setTimeout()",
+      "repeat()",
+      "loop()"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "setInterval runs repeatedly."
   },
   {
     "id": 26,
-    "question": "What is the output of typeof null? ",
+    "question": "Which keyword handles errors?",
     "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
+      "try-catch",
+      "error",
+      "handle",
+      "exception"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0,
+    "explanation": "try-catch is used for error handling."
   },
   {
     "id": 27,
-    "question": "Which operator is strict equality? (Question 27)",
+    "question": "Which operator is used for assignment?",
     "options": [
-      "==",
       "=",
+      "==",
       "===",
       "!="
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0,
+    "explanation": "= assigns values to variables."
   },
   {
     "id": 28,
-    "question": "Which method adds an element to the end of an array?",
+    "question": "Which keyword defines an object?",
     "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
+      "object",
+      "{}",
+      "class",
+      "define"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1,
+    "explanation": "Objects are created using {} in JavaScript."
   },
   {
     "id": 29,
-    "question": "Which keyword creates a block-scoped variable?",
+    "question": "Which keyword defines a class?",
     "options": [
-      "var",
-      "let",
-      "static",
-      "define"
+      "class",
+      "object",
+      "function",
+      "struct"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0,
+    "explanation": "class keyword defines JavaScript classes."
   },
   {
     "id": 30,
-    "question": "How do you write an arrow function? (Question 30)",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 31,
-    "question": "Which keyword is used to declare a variable in JavaScript?",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 32,
-    "question": "Which company developed JavaScript?",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 33,
-    "question": "What does DOM stand for)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 34,
-    "question": "Which symbol is used for single-line comments?",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 35,
-    "question": "Which method converts JSON to a JavaScript object)",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 36,
-    "question": "What is the output of typeof null?",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 37,
-    "question": "Which operator is strict equality?",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 38,
-    "question": "Which method adds an element to the end of an array?",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 39,
-    "question": "Which keyword creates a block-scoped variable?",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 40,
-    "question": "How do you write an arrow function?",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 41,
-    "question": "Which keyword is used to declare a variable in JavaScript?",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 42,
-    "question": "Which company developed JavaScript?",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 43,
-    "question": "What does DOM stand for?",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 44,
-    "question": "Which symbol is used for single-line comments?",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 45,
-    "question": "Which method converts JSON to a JavaScript object?",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 46,
-    "question": "What is the output of typeof null?",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 47,
-    "question": "Which operator is strict equality?",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 48,
-    "question": "Which method adds an element to the end of an array?",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 49,
-    "question": "Which keyword creates a block-scoped variable?",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 50,
-    "question": "How do you write an arrow function?",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 51,
-    "question": "Which keyword is used to declare a variable in JavaScript?",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 52,
-    "question": "Which company developed JavaScript?",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 53,
-    "question": "What does DOM stand for?",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 54,
-    "question": "Which symbol is used for single-line comments?",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 55,
-    "question": "Which method converts JSON to a JavaScript object? (Question 55)",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 56,
-    "question": "What is the output of typeof null? (Question 56)",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 57,
-    "question": "Which operator is strict equality? (Question 57)",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 58,
-    "question": "Which method adds an element to the end of an array? (Question 58)",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 59,
-    "question": "Which keyword creates a block-scoped variable? (Question 59)",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 60,
-    "question": "How do you write an arrow function? (Question 60)",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 61,
-    "question": "Which keyword is used to declare a variable in JavaScript? (Question 61)",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 62,
-    "question": "Which company developed JavaScript? (Question 62)",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 63,
-    "question": "What does DOM stand for? (Question 63)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 64,
-    "question": "Which symbol is used for single-line comments? (Question 64)",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 65,
-    "question": "Which method converts JSON to a JavaScript object? (Question 65)",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 66,
-    "question": "What is the output of typeof null? (Question 66)",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 67,
-    "question": "Which operator is strict equality? (Question 67)",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 68,
-    "question": "Which method adds an element to the end of an array? (Question 68)",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 69,
-    "question": "Which keyword creates a block-scoped variable? (Question 69)",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 70,
-    "question": "How do you write an arrow function? (Question 70)",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 71,
-    "question": "Which keyword is used to declare a variable in JavaScript? (Question 71)",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 72,
-    "question": "Which company developed JavaScript? (Question 72)",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 73,
-    "question": "What does DOM stand for? (Question 73)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 74,
-    "question": "Which symbol is used for single-line comments? (Question 74)",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 75,
-    "question": "Which method converts JSON to a JavaScript object? (Question 75)",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 76,
-    "question": "What is the output of typeof null? (Question 76)",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 77,
-    "question": "Which operator is strict equality? (Question 77)",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 78,
-    "question": "Which method adds an element to the end of an array? (Question 78)",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 79,
-    "question": "Which keyword creates a block-scoped variable? (Question 79)",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 80,
-    "question": "How do you write an arrow function? (Question 80)",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 81,
-    "question": "Which keyword is used to declare a variable in JavaScript? (Question 81)",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 82,
-    "question": "Which company developed JavaScript? (Question 82)",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 83,
-    "question": "What does DOM stand for? (Question 83)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 84,
-    "question": "Which symbol is used for single-line comments? (Question 84)",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 85,
-    "question": "Which method converts JSON to a JavaScript object? (Question 85)",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 86,
-    "question": "What is the output of typeof null? (Question 86)",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 87,
-    "question": "Which operator is strict equality? (Question 87)",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 88,
-    "question": "Which method adds an element to the end of an array? (Question 88)",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 89,
-    "question": "Which keyword creates a block-scoped variable? (Question 89)",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 90,
-    "question": "How do you write an arrow function? (Question 90)",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 91,
-    "question": "Which keyword is used to declare a variable in JavaScript? (Question 91)",
-    "options": [
-      "var",
-      "int",
-      "string",
-      "float"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 92,
-    "question": "Which company developed JavaScript? (Question 92)",
-    "options": [
-      "Microsoft",
-      "Netscape",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 93,
-    "question": "What does DOM stand for? (Question 93)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Ordinance Model",
-      "Desktop Object Management"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 94,
-    "question": "Which symbol is used for single-line comments? (Question 94)",
-    "options": [
-      "//",
-      "#",
-      "<!-- -->",
-      "**"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 95,
-    "question": "Which method converts JSON to a JavaScript object? (Question 95)",
-    "options": [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.convert()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 96,
-    "question": "What is the output of typeof null? (Question 96)",
-    "options": [
-      "null",
-      "object",
-      "undefined",
-      "number"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 97,
-    "question": "Which operator is strict equality? (Question 97)",
-    "options": [
-      "==",
-      "=",
-      "===",
-      "!="
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 98,
-    "question": "Which method adds an element to the end of an array? (Question 98)",
-    "options": [
-      "push()",
-      "pop()",
-      "shift()",
-      "unshift()"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 99,
-    "question": "Which keyword creates a block-scoped variable? (Question 99)",
-    "options": [
-      "var",
-      "let",
-      "static",
-      "define"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 100,
-    "question": "How do you write an arrow function? (Question 100)",
-    "options": [
-      "function => {}",
-      "() => {}",
-      "=> () {}",
-      "function() => {}"
-    ],
-    "correctAnswer": 1
+    "question": "Which method is used to print output in console?",
+    "options": [
+      "print()",
+      "console.log()",
+      "echo()",
+      "write()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "console.log() prints output in JavaScript console."
   }
 ]

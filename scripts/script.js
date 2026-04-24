@@ -1,27 +1,28 @@
-let currentQuestionNumber = 0;
-let totalQuestions = 20;
+function getRecentQuizzes() {
+  return JSON.parse(localStorage.getItem("recentQuizzes")) || [];
+}
+
+function playSound(name) {
+  new Audio(`../sounds/${name}.mp3`).play();
+}
+
 export function getRandomQuestions(quizData) {
   if (!quizData || quizData.length === 0) {
     console.error("Quiz data is not loaded or empty.");
     return [];
   }
-
-  const shuffled = [...quizData].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 20);
+  return [...quizData].sort(() => 0.5 - Math.random()).slice(0, 2);
 }
 
-//load question into html elements!
 export function loadQuestion(questions, currentQuestionIndex) {
-  currentQuestionNumber = currentQuestionIndex;
-  questions = questions;
-  console.log("Loading question:", questions.length);
-  //disable for every new question
   const nextButton = document.getElementById("next-question");
   nextButton.disabled = true;
 
+  // Hide explanation from previous question
+  document.getElementById("explanation-box").classList.add("hidden");
+
   const questionElement = document.getElementById("question");
   const optionsElement = document.getElementById("options-container");
-  // console.log(optionsElement);
 
   if (!questions || questions.length === 0) {
     console.error("No questions available to load.");
@@ -30,10 +31,9 @@ export function loadQuestion(questions, currentQuestionIndex) {
 
   const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
-  optionsElement.innerHTML = ""; // Clear previous options
+  optionsElement.innerHTML = "";
 
   currentQuestion.options.forEach((option, index) => {
-    // console.log(`Adding option ${index + 1}: ${option}`);
     const optionId = `option${index + 1}`;
 
     const wrapper = document.createElement("div");
@@ -43,7 +43,7 @@ export function loadQuestion(questions, currentQuestionIndex) {
     const input = document.createElement("input");
     input.type = "radio";
     input.id = optionId;
-    input.name = `options`; // unique per question
+    input.name = "options";
     input.value = option;
     input.classList.add("answers");
 
@@ -52,164 +52,109 @@ export function loadQuestion(questions, currentQuestionIndex) {
     label.classList.add("option");
     label.textContent = option;
 
-    const feedback = document.createElement("div");
-    feedback.id = `feedback-${optionId}`;
-    feedback.classList.add("feedback");
-
-    wrapper.append(input, label, feedback);
+    wrapper.append(input, label);
     optionsElement.appendChild(wrapper);
 
-    // Add event listener for option selection
-    const optionInput = document.getElementById(optionId);
-    optionInput.addEventListener("change", () => {
-      console.log(`Option ${index + 1} selected: ${option}`);
-      selectAnswer(currentQuestion, index);
-    });
+    input.addEventListener("change", () =>
+      selectAnswer(currentQuestion, index),
+    );
   });
+}
+
+function applyStyle(element, bg, color, border) {
+  element.style.backgroundColor = bg;
+  element.style.color = color;
+  element.style.border = border;
 }
 
 function selectAnswer(question, index) {
-  //select answer
-  question.userAnswer = index; //storing user answer
-  const feedback = document.getElementById(`recent-quiz-item-${index + 1}`);
+  question.userAnswer = index;
 
-  if (question.correctAnswer === index) {
-    feedback.style.backgroundColor = "#d4edda";
-    feedback.style.color = "#155724";
-    feedback.style.border = "2px solid #28a745";
-    const audio = new Audio("../sounds/correct.mp3");
-    audio.play();
-  } else {
-    feedback.style.backgroundColor = "#f8d7da";
-    feedback.style.color = "#721c24";
-    feedback.style.border = "2px solid #dc3545";
-      const audio = new Audio("../sounds/wrong.mp3");
-      audio.play();
-  }
-  // disable all inputs
-  const inputs = document.querySelectorAll(".answers");
-  inputs.forEach((input) => {
-    input.disabled = true;
-  });
-  //show correct answer
-  const correctOption = document.getElementById(
+  const selected = document.getElementById(`recent-quiz-item-${index + 1}`);
+  const correct = document.getElementById(
     `recent-quiz-item-${question.correctAnswer + 1}`,
   );
-  correctOption.style.backgroundColor = "#d4edda";
-  correctOption.style.color = "#155724";
-  correctOption.style.border = "2px solid #28a745";
 
-  // able to click next button
-  const nextButton = document.getElementById("next-question");
-  nextButton.disabled = false;
-  nextButton.addEventListener("click", () => {
-    document.getElementById("progress-bar-fill").style.width =
-      `${((currentQuestionNumber + 1) / totalQuestions) * 100}%`;
-  });
+  if (question.correctAnswer === index) {
+    applyStyle(selected, "#d4edda", "#155724", "2px solid #28a745");
+    playSound("correct");
+  } else {
+    applyStyle(selected, "#f8d7da", "#721c24", "2px solid #dc3545");
+    applyStyle(correct, "#d4edda", "#155724", "2px solid #28a745");
+    playSound("wrong");
+  }
+
+  document
+    .querySelectorAll(".answers")
+    .forEach((input) => (input.disabled = true));
+  document.getElementById("next-question").disabled = false;
+
+  // Show explanation
+  const explanationBox = document.getElementById("explanation-box");
+  document.getElementById("explanation-text").textContent =
+    question.explanation || "";
+  explanationBox.classList.remove("hidden");
 }
 
-//recent quiz data store in localstorage
+// local storage
 export function storeRecentQuizData(subject) {
-  const recentQuizzes =
-    JSON.parse(localStorage.getItem("recentQuizzes")) || [];
-
-  // Remove existing entry of same subject
-  const filtered = recentQuizzes.filter(
-    (quiz) => quiz.subject !== subject
-  );
-
-  // Add new one at top
   const updated = [
-    { subject: subject, date: new Date() },
-    ...filtered,
-  ];
+    { subject, date: new Date() },
+    ...getRecentQuizzes().filter((q) => q.subject !== subject),
+  ].slice(0, 5);
 
-  // limit to 5 recent quizzes
-  const limited = updated.slice(0, 5);
-
-  localStorage.setItem("recentQuizzes", JSON.stringify(limited));
-
-  console.log("Stored recent quiz data:", limited);
+  localStorage.setItem("recentQuizzes", JSON.stringify(updated));
 }
 
 export function showRecentQuizzes() {
-  const recentQuizzes =
-    JSON.parse(localStorage.getItem("recentQuizzes")).slice(0, 5) || [];
-  recentQuizzes.forEach((quiz) => {
-    const el = `
-            <article class="recent-quiz-item">
-              <img
-                src="./images/${quiz.subject}.png"
-                alt="${quiz.subject} Quiz"
-                class="recent-quiz-item-image"
-              />
-              <div>
-                <h3>${quiz.subject} Quiz</h3>
-                <p>Last Attempt: ${dateFormat(quiz.date)}</p>
-              </div>
-            </article>`;
-    document.getElementById("recent-quiz-items").innerHTML += el;
+  const container = document.getElementById("recent-quiz-items");
+  getRecentQuizzes().forEach((quiz) => {
+    container.innerHTML += `
+      <div class="recent-quiz-item">
+        <img src="./images/${quiz.subject.toLowerCase()}.png" alt="${quiz.subject}" />
+        <div class="recent-quiz-info">
+          <p class="recent-quiz-subject">${quiz.subject} Quiz</p>
+          <p class="recent-quiz-date">Last Attempt: ${dateFormat(quiz.date)}</p>
+        </div>
+      </div>`;
   });
 }
-function dateFormat(date){
-  console.log(Date(), date);
+
+function dateFormat(date) {
   const newDate = new Date(date);
   const today = new Date();
+  const yesterday = new Date();
+  yesterday.setDate(today.getDate() - 1);
 
-  //today time
-if (newDate.toDateString() === today.toDateString()) {
-  return newDate.toLocaleTimeString();
+  if (newDate.toDateString() === today.toDateString())
+    return newDate.toLocaleTimeString();
+  if (newDate.toDateString() === yesterday.toDateString()) return "Yesterday";
+  return newDate.toLocaleDateString();
 }
-  //yesterday
-if (newDate.toDateString() === today.toDateString() - 1) {
-  return "Yesterday";
-}
-//days ago
-return newDate.toLocaleDateString();
-}
+
+// greeting and streak functions
 export function displayGreeting() {
   const hour = new Date().getHours();
-  const greeting = hour < 12 ? "Good Morning!" : "Good Afternoon!";
-  document.querySelector(".greeting h1").textContent = greeting;
-  
+  document.querySelector(".greeting h1").textContent =
+    hour < 12 ? "Good Morning!" : "Good Afternoon!";
 }
 
 export function calculateStreak() {
-  const data = localStorage.getItem("recentQuizzes")
-    ? JSON.parse(localStorage.getItem("recentQuizzes"))
-    : [];
-
-  if (data.length === 0) return 0;
-
-  // Convert dates and remove duplicates per day
-  const uniqueDays = [...new Set(
-    data.map((quiz) =>
-      new Date(quiz.date).toDateString()
-    )
-  )];
-
-  // Sort newest first
-  uniqueDays.sort(
-    (a, b) => new Date(b) - new Date(a)
-  );
+  const uniqueDays = [
+    ...new Set(getRecentQuizzes().map((q) => new Date(q.date).toDateString())),
+  ].sort((a, b) => new Date(b) - new Date(a));
 
   let streak = 0;
   let currentDate = new Date();
 
-  for (let i = 0; i < uniqueDays.length; i++) {
-    const quizDate = new Date(uniqueDays[i]);
-
-    // Compare expected date
-    if (
-      quizDate.toDateString() ===
-      currentDate.toDateString()
-    ) {
+  for (const day of uniqueDays) {
+    if (new Date(day).toDateString() === currentDate.toDateString()) {
       streak++;
-      currentDate.setDate(currentDate.getDate() - 1); // go back 1 day
+      currentDate.setDate(currentDate.getDate() - 1);
     } else {
-      break; // streak stops
+      break;
     }
   }
-console.log(streak);
+
   return streak;
 }

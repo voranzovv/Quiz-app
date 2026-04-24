@@ -8,7 +8,8 @@
       "Creative Style Sheets",
       "Colorful Style Sheets"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 1,
+    "explanation": "CSS stands for Cascading Style Sheets, used to style web pages."
   },
   {
     "id": 2,
@@ -19,114 +20,343 @@
       "<style>",
       "<script>"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 0,
+    "explanation": "The <link> tag is used to connect external CSS files to HTML."
   },
   {
     "id": 3,
     "question": "Which property is used to change the background color?",
-    "options": ["color", "bgcolor", "background-color", "background"],
-    "correctAnswer": 2
+    "options": [
+      "color",
+      "bgcolor",
+      "background-color",
+      "background"
+    ],
+    "correctAnswer": 2,
+    "explanation": "background-color sets the background color of an element."
   },
   {
     "id": 4,
     "question": "Which CSS property controls the text size?",
-    "options": ["font-style", "text-size", "font-size", "text-style"],
-    "correctAnswer": 2
+    "options": [
+      "font-style",
+      "text-size",
+      "font-size",
+      "text-style"
+    ],
+    "correctAnswer": 2,
+    "explanation": "font-size controls the size of text."
   },
   {
     "id": 5,
     "question": "How do you make text bold in CSS?",
-    "options": ["font-weight: bold;", "text-style: bold;", "font-style: bold;", "text-weight: bold;"],
-    "correctAnswer": 0
+    "options": [
+      "font-weight: bold;",
+      "text-style: bold;",
+      "font-style: bold;",
+      "text-weight: bold;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "font-weight: bold makes text bold."
   },
   {
     "id": 6,
     "question": "Which CSS property controls the text color?",
-    "options": ["color", "font-color", "text-color", "font-style"],
-    "correctAnswer": 0
+    "options": [
+      "color",
+      "font-color",
+      "text-color",
+      "font-style"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The color property changes text color."
   },
   {
     "id": 7,
     "question": "How do you display a border around an element?",
-    "options": ["border: 1px solid black;", "border-style: solid;", "border-width: 1px;", "border-color: black;"],
-    "correctAnswer": 0
+    "options": [
+      "border: 1px solid black;",
+      "border-style: solid;",
+      "border-width: 1px;",
+      "border-color: black;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "border property defines width, style, and color in one line."
   },
   {
     "id": 8,
     "question": "How do you make a list horizontal in CSS?",
-    "options": ["display: inline;", "display: block;", "list-style: horizontal;", "float: left;"],
-    "correctAnswer": 0
+    "options": [
+      "display: inline;",
+      "display: block;",
+      "list-style: horizontal;",
+      "float: left;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "display: inline makes list items appear in a row."
   },
   {
     "id": 9,
     "question": "Which property is used to change the font of an element?",
-    "options": ["font-family", "font-style", "text-style", "font-type"],
-    "correctAnswer": 0
+    "options": [
+      "font-family",
+      "font-style",
+      "text-style",
+      "font-type"
+    ],
+    "correctAnswer": 0,
+    "explanation": "font-family sets the typeface of text."
   },
   {
     "id": 10,
     "question": "Which property is used to change the spacing between letters?",
-    "options": ["letter-spacing", "text-spacing", "font-spacing", "word-spacing"],
-    "correctAnswer": 0
+    "options": [
+      "letter-spacing",
+      "text-spacing",
+      "font-spacing",
+      "word-spacing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "letter-spacing adjusts space between characters."
   },
   {
     "id": 11,
     "question": "How do you make a list item marker disappear?",
-    "options": ["list-style-type: none;", "marker: none;", "display: none;", "text-decoration: none;"],
-    "correctAnswer": 0
+    "options": [
+      "list-style-type: none;",
+      "marker: none;",
+      "display: none;",
+      "text-decoration: none;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "list-style-type: none removes bullets or numbers."
   },
   {
     "id": 12,
     "question": "Which CSS property is used to control the layout of flex items?",
-    "options": ["flex-direction", "justify-content", "align-items", "All of the above"],
-    "correctAnswer": 3
+    "options": [
+      "flex-direction",
+      "justify-content",
+      "align-items",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All listed properties help control flexbox layout."
   },
   {
     "id": 13,
     "question": "Which CSS property is used to control the transparency of an element?",
-    "options": ["visibility", "opacity", "transparent", "alpha"],
-    "correctAnswer": 1
+    "options": [
+      "visibility",
+      "opacity",
+      "transparent",
+      "alpha"
+    ],
+    "correctAnswer": 1,
+    "explanation": "opacity controls transparency of elements."
   },
   {
     "id": 14,
     "question": "How do you add a shadow to text?",
-    "options": ["text-shadow: 2px 2px black;", "shadow: text;", "font-shadow: black 2px 2px;", "text-decoration: shadow;"],
-    "correctAnswer": 0
+    "options": [
+      "text-shadow: 2px 2px black;",
+      "shadow: text;",
+      "font-shadow: black 2px 2px;",
+      "text-decoration: shadow;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "text-shadow adds shadow effect to text."
   },
   {
     "id": 15,
     "question": "Which property is used to set the space between lines of text?",
-    "options": ["line-height", "text-spacing", "spacing", "line-spacing"],
-    "correctAnswer": 0
+    "options": [
+      "line-height",
+      "text-spacing",
+      "spacing",
+      "line-spacing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "line-height controls spacing between lines."
   },
   {
     "id": 16,
     "question": "Which property is used to add spacing inside an element?",
-    "options": ["padding", "margin", "spacing", "border-spacing"],
-    "correctAnswer": 0
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "border-spacing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "padding adds inner spacing inside an element."
   },
   {
     "id": 17,
     "question": "Which property is used to add spacing outside an element?",
-    "options": ["margin", "padding", "spacing", "border-spacing"],
-    "correctAnswer": 0
+    "options": [
+      "margin",
+      "padding",
+      "spacing",
+      "border-spacing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "margin adds space outside an element."
   },
   {
     "id": 18,
     "question": "Which property is used to control the visibility of an element?",
-    "options": ["display", "visibility", "opacity", "hidden"],
-    "correctAnswer": 1
+    "options": [
+      "display",
+      "visibility",
+      "opacity",
+      "hidden"
+    ],
+    "correctAnswer": 1,
+    "explanation": "visibility controls whether an element is visible or hidden."
   },
   {
     "id": 19,
     "question": "Which property is used to control the flow of floated elements?",
-    "options": ["clear", "float", "overflow", "display"],
-    "correctAnswer": 0
+    "options": [
+      "clear",
+      "float",
+      "overflow",
+      "display"
+    ],
+    "correctAnswer": 0,
+    "explanation": "clear controls how elements behave around floated items."
   },
   {
     "id": 20,
     "question": "Which property controls the background image repetition?",
-    "options": ["background-repeat", "background-image", "background-position", "background-size"],
-    "correctAnswer": 0
+    "options": [
+      "background-repeat",
+      "background-image",
+      "background-position",
+      "background-size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "background-repeat controls if/how an image repeats."
+  },
+  {
+    "id": 21,
+    "question": "Which property is used to set the width of an element?",
+    "options": [
+      "width",
+      "size",
+      "length",
+      "dimension"
+    ],
+    "correctAnswer": 0,
+    "explanation": "width sets the horizontal size of an element."
+  },
+  {
+    "id": 22,
+    "question": "Which property is used to set the height of an element?",
+    "options": [
+      "height",
+      "size",
+      "length",
+      "dimension"
+    ],
+    "correctAnswer": 0,
+    "explanation": "height sets the vertical size of an element."
+  },
+  {
+    "id": 23,
+    "question": "Which property is used to center text?",
+    "options": [
+      "text-align: center;",
+      "align: center;",
+      "font-align: center;",
+      "center-text: true;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "text-align: center centers text horizontally."
+  },
+  {
+    "id": 24,
+    "question": "Which property is used to change the cursor style?",
+    "options": [
+      "cursor",
+      "pointer",
+      "mouse-style",
+      "hover"
+    ],
+    "correctAnswer": 0,
+    "explanation": "cursor property changes mouse pointer style."
+  },
+  {
+    "id": 25,
+    "question": "Which property is used to make an element hidden but still take space?",
+    "options": [
+      "visibility: hidden;",
+      "display: none;",
+      "opacity: 0;",
+      "hidden: true;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "visibility: hidden hides element but keeps layout space."
+  },
+  {
+    "id": 26,
+    "question": "Which property is used for smooth transitions?",
+    "options": [
+      "transition",
+      "animation",
+      "transform",
+      "effect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "transition enables smooth property changes."
+  },
+  {
+    "id": 27,
+    "question": "Which property is used to rotate an element?",
+    "options": [
+      "transform",
+      "rotate",
+      "spin",
+      "angle"
+    ],
+    "correctAnswer": 0,
+    "explanation": "transform: rotate() rotates elements."
+  },
+  {
+    "id": 28,
+    "question": "Which property is used to change stacking order?",
+    "options": [
+      "z-index",
+      "stack",
+      "order",
+      "depth"
+    ],
+    "correctAnswer": 0,
+    "explanation": "z-index controls overlapping order of elements."
+  },
+  {
+    "id": 29,
+    "question": "Which property is used to control overflow content?",
+    "options": [
+      "overflow",
+      "scroll",
+      "clip",
+      "content-fit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "overflow controls what happens when content exceeds container."
+  },
+  {
+    "id": 30,
+    "question": "Which property is used to set background image size?",
+    "options": [
+      "background-size",
+      "background-fit",
+      "image-size",
+      "size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "background-size controls how the image is scaled."
   }
 ]

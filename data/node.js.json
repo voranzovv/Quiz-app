@@ -2,181 +2,361 @@
   {
     "id": 1,
     "question": "Node.js is built on which JavaScript engine?",
-    "options": ["V8", "SpiderMonkey", "Chakra", "Rhino"],
-    "correctAnswer": 0
+    "options": [
+      "V8",
+      "SpiderMonkey",
+      "Chakra",
+      "Rhino"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Node.js uses Google’s V8 engine to execute JavaScript outside the browser."
   },
   {
     "id": 2,
     "question": "Which module is used to work with file systems in Node.js?",
-    "options": ["fs", "path", "os", "http"],
-    "correctAnswer": 0
+    "options": [
+      "fs",
+      "path",
+      "os",
+      "http"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The fs module provides file system operations like read/write."
   },
   {
     "id": 3,
     "question": "Which method is used to read a file asynchronously?",
-    "options": ["fs.readFile()", "fs.readFileSync()", "fs.open()", "fs.writeFile()"],
-    "correctAnswer": 0
+    "options": [
+      "fs.readFile()",
+      "fs.readFileSync()",
+      "fs.open()",
+      "fs.writeFile()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "fs.readFile() reads files asynchronously without blocking execution."
   },
   {
     "id": 4,
-    "question": "Which of the following is Node.js primarily used for?",
-    "options": ["Server-side scripting", "Client-side scripting", "Database management", "Desktop apps"],
-    "correctAnswer": 0
+    "question": "Node.js is primarily used for?",
+    "options": [
+      "Server-side scripting",
+      "Client-side scripting",
+      "Database management",
+      "Desktop apps"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Node.js runs JavaScript on the server side."
   },
   {
     "id": 5,
     "question": "Which method is used to create a simple HTTP server?",
-    "options": ["http.createServer()", "http.server()", "http.listen()", "http.get()"],
-    "correctAnswer": 0
+    "options": [
+      "http.createServer()",
+      "http.server()",
+      "http.listen()",
+      "http.get()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "http.createServer() creates an HTTP server in Node.js."
   },
   {
     "id": 6,
     "question": "Which Node.js module is used to handle file paths?",
-    "options": ["path", "fs", "url", "os"],
-    "correctAnswer": 0
+    "options": [
+      "path",
+      "fs",
+      "url",
+      "os"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The path module handles file and directory paths."
   },
   {
     "id": 7,
     "question": "Which keyword is used to import modules in Node.js?",
-    "options": ["require", "import", "include", "load"],
-    "correctAnswer": 0
+    "options": [
+      "require",
+      "import",
+      "include",
+      "load"
+    ],
+    "correctAnswer": 0,
+    "explanation": "require() is used in CommonJS to import modules."
   },
   {
     "id": 8,
     "question": "Which module allows handling HTTP requests and responses?",
-    "options": ["http", "https", "url", "request"],
-    "correctAnswer": 0
+    "options": [
+      "http",
+      "https",
+      "url",
+      "request"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The http module is used to handle web requests."
   },
   {
     "id": 9,
     "question": "Which module provides utilities for debugging and logging?",
-    "options": ["util", "logger", "debug", "console"],
-    "correctAnswer": 0
+    "options": [
+      "util",
+      "logger",
+      "debug",
+      "console"
+    ],
+    "correctAnswer": 0,
+    "explanation": "util module provides utility functions for debugging."
   },
   {
     "id": 10,
     "question": "Which method writes data to a file asynchronously?",
-    "options": ["fs.writeFile()", "fs.writeFileSync()", "fs.appendFileSync()", "fs.write()"],
-    "correctAnswer": 0
+    "options": [
+      "fs.writeFile()",
+      "fs.writeFileSync()",
+      "fs.appendFileSync()",
+      "fs.write()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "fs.writeFile() writes data asynchronously."
   },
   {
     "id": 11,
     "question": "Which method is used to append data to a file?",
-    "options": ["fs.appendFile()", "fs.writeFile()", "fs.write()", "fs.addFile()"],
-    "correctAnswer": 0
+    "options": [
+      "fs.appendFile()",
+      "fs.writeFile()",
+      "fs.write()",
+      "fs.addFile()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "fs.appendFile() adds data to the end of a file."
   },
   {
     "id": 12,
     "question": "Which module is used to create child processes?",
-    "options": ["child_process", "process", "cluster", "os"],
-    "correctAnswer": 0
+    "options": [
+      "child_process",
+      "process",
+      "cluster",
+      "os"
+    ],
+    "correctAnswer": 0,
+    "explanation": "child_process module allows running child processes."
   },
   {
     "id": 13,
     "question": "Which method is used to get environment variables?",
-    "options": ["process.env", "process.vars", "process.get()", "os.env"],
-    "correctAnswer": 0
+    "options": [
+      "process.env",
+      "process.vars",
+      "process.get()",
+      "os.env"
+    ],
+    "correctAnswer": 0,
+    "explanation": "process.env stores environment variables."
   },
   {
     "id": 14,
     "question": "Which method ends an HTTP response?",
-    "options": ["res.end()", "res.close()", "res.finish()", "res.send()"],
-    "correctAnswer": 0
+    "options": [
+      "res.end()",
+      "res.close()",
+      "res.finish()",
+      "res.send()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "res.end() ends the response process."
   },
   {
     "id": 15,
     "question": "Which method is used to start listening on a port?",
-    "options": ["server.listen()", "http.listen()", "server.start()", "app.listen()"],
-    "correctAnswer": 0
+    "options": [
+      "server.listen()",
+      "http.listen()",
+      "server.start()",
+      "app.listen()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "server.listen() starts a server on a port."
   },
   {
     "id": 16,
     "question": "Node.js uses which architecture for handling requests?",
-    "options": ["Event-driven, non-blocking", "Thread-per-request", "Blocking I/O", "Synchronous only"],
-    "correctAnswer": 0
+    "options": [
+      "Event-driven, non-blocking",
+      "Thread-per-request",
+      "Blocking I/O",
+      "Synchronous only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Node.js uses event-driven non-blocking architecture."
   },
   {
     "id": 17,
     "question": "Which object is global and can be used without requiring it?",
-    "options": ["process", "fs", "http", "url"],
-    "correctAnswer": 0
+    "options": [
+      "process",
+      "fs",
+      "http",
+      "url"
+    ],
+    "correctAnswer": 0,
+    "explanation": "process is a global object in Node.js."
   },
   {
     "id": 18,
     "question": "Which module is used to create query strings?",
-    "options": ["querystring", "qs", "url", "request"],
-    "correctAnswer": 0
+    "options": [
+      "querystring",
+      "qs",
+      "url",
+      "request"
+    ],
+    "correctAnswer": 0,
+    "explanation": "querystring module helps build and parse query strings."
   },
   {
     "id": 19,
     "question": "Which module is used to compress data in Node.js?",
-    "options": ["zlib", "gzip", "compress", "file"],
-    "correctAnswer": 0
+    "options": [
+      "zlib",
+      "gzip",
+      "compress",
+      "file"
+    ],
+    "correctAnswer": 0,
+    "explanation": "zlib is used for compression and decompression."
   },
   {
     "id": 20,
     "question": "Which module is used for working with streams?",
-    "options": ["stream", "fs", "http", "buffer"],
-    "correctAnswer": 0
+    "options": [
+      "stream",
+      "fs",
+      "http",
+      "buffer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "stream module handles streaming data."
   },
   {
     "id": 21,
-    "question": "Which method synchronously reads the contents of a file?",
-    "options": ["fs.readFileSync()", "fs.readFile()", "fs.openSync()", "fs.readSync()"],
-    "correctAnswer": 0
+    "question": "Which method synchronously reads a file?",
+    "options": [
+      "fs.readFileSync()",
+      "fs.readFile()",
+      "fs.openSync()",
+      "fs.readSync()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "fs.readFileSync() reads file synchronously."
   },
   {
     "id": 22,
-    "question": "Which method converts a JavaScript object to JSON string?",
-    "options": ["JSON.stringify()", "JSON.parse()", "JSON.toString()", "JSON.objectify()"],
-    "correctAnswer": 0
+    "question": "Which method converts object to JSON string?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.toString()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "JSON.stringify() converts objects to JSON strings."
   },
   {
     "id": 23,
-    "question": "Which method parses a JSON string to a JavaScript object?",
-    "options": ["JSON.parse()", "JSON.stringify()", "JSON.objectify()", "JSON.convert()"],
-    "correctAnswer": 0
+    "question": "Which method parses JSON string to object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.objectify()",
+      "JSON.convert()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "JSON.parse() converts JSON strings to objects."
   },
   {
     "id": 24,
-    "question": "Which Node.js module helps to work with buffers?",
-    "options": ["buffer", "stream", "fs", "util"],
-    "correctAnswer": 0
+    "question": "Which module helps to work with buffers?",
+    "options": [
+      "buffer",
+      "stream",
+      "fs",
+      "util"
+    ],
+    "correctAnswer": 0,
+    "explanation": "buffer module handles binary data."
   },
   {
     "id": 25,
-    "question": "Which method creates a readable stream from a file?",
-    "options": ["fs.createReadStream()", "fs.readFile()", "fs.readStream()", "fs.stream()"],
-    "correctAnswer": 0
+    "question": "Which method creates a readable file stream?",
+    "options": [
+      "fs.createReadStream()",
+      "fs.readFile()",
+      "fs.readStream()",
+      "fs.stream()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "fs.createReadStream() creates a readable stream."
   },
   {
     "id": 26,
     "question": "Which module is used to handle events?",
-    "options": ["events", "event", "listener", "emit"],
-    "correctAnswer": 0
+    "options": [
+      "events",
+      "event",
+      "listener",
+      "emit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "events module handles event-driven programming."
   },
   {
     "id": 27,
     "question": "Which method emits an event?",
-    "options": ["emit()", "on()", "trigger()", "fire()"],
-    "correctAnswer": 0
+    "options": [
+      "emit()",
+      "on()",
+      "trigger()",
+      "fire()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "emit() triggers an event."
   },
   {
     "id": 28,
     "question": "Which module is used to create a TCP server?",
-    "options": ["net", "tcp", "http", "socket"],
-    "correctAnswer": 0
+    "options": [
+      "net",
+      "tcp",
+      "http",
+      "socket"
+    ],
+    "correctAnswer": 0,
+    "explanation": "net module is used for TCP servers."
   },
   {
     "id": 29,
-    "question": "Which property is used to get the length of a buffer?",
-    "options": ["buffer.length", "buffer.size", "buffer.length()", "buffer.count"],
-    "correctAnswer": 0
+    "question": "Which property returns buffer length?",
+    "options": [
+      "buffer.length",
+      "buffer.size",
+      "buffer.length()",
+      "buffer.count"
+    ],
+    "correctAnswer": 0,
+    "explanation": "buffer.length returns size of buffer."
   },
   {
     "id": 30,
-    "question": "Which method converts a buffer to string?",
-    "options": ["buffer.toString()", "buffer.toStr()", "buffer.stringify()", "buffer.convert()"],
-    "correctAnswer": 0
+    "question": "Which method converts buffer to string?",
+    "options": [
+      "buffer.toString()",
+      "buffer.toStr()",
+      "buffer.stringify()",
+      "buffer.convert()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "toString() converts buffer data into readable text."
   }
 ]

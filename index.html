@@ -11,8 +11,7 @@
 
   <body>
     <main class="main-container">
-      <!-- Home / Dashboard section  -->
-      <!-- ================= HEADER ================= -->
+      <!-- Home section  -->
       <section class="home-section">
         <header class="container-header">
           <img src="./images/avatar.png" alt="User Avatar" class="avatar" />
@@ -22,10 +21,10 @@
           </div>
         </header>
 
-        <!-- ================= STREAK & GOAL ================= -->
+        <!-- streak and daily goal section -->
         <section class="streak-achievement">
           <article class="streak-card">
-            <h2>🔥 Streak</h2>
+            <h2>Streak</h2>
             <div class="streak-days">
               <span class="streak" id="streak">1</span>
               <p>Days</p>
@@ -33,20 +32,20 @@
           </article>
 
           <article class="goal-card">
-            <h2>🎯 Daily Goal</h2>
+            <h2>Daily Goal</h2>
             <div class="goal-circle">
-              <span class="number">10</span>
+              <span class="number">2</span>
               <p>Quizzes</p>
             </div>
           </article>
         </section>
 
-        <!-- ================= DISCOVER ================= -->
+        <!-- discover section  -->
         <section class="discover">
           <h2>Discover</h2>
 
           <div class="discover-items" id="discover-JavaScript">
-            <article class="discover-item" id="discover-item">
+            <article class="discover-item">
               <img src="./images/javascript.png" alt="JavaScript Logo" />
               <p>JavaScript</p>
             </article>
@@ -73,20 +72,18 @@
           </div>
         </section>
 
-        <!-- ================= RECENT QUIZZES ================= -->
+        <!-- recent quizzes section  -->
         <section class="recent-quiz">
           <h2>Recent Quizzes</h2>
-
           <div class="recent-quiz-items" id="recent-quiz-items"></div>
         </section>
       </section>
 
-      <!-- ================= QUIZ SECTION ================= -->
+      <!-- quiz section  -->
       <section class="quiz-section" id="quiz-section">
         <div class="quiz-card">
           <div class="quiz-header">
-            <h2>Quiz Time 🚀</h2>
-
+            <h2>Quiz Time</h2>
             <div class="progress-bar">
               <div class="progress-bar-fill" id="progress-bar-fill"></div>
             </div>
@@ -95,32 +92,25 @@
           <div class="question" id="question">
             Who is the founder of JavaScript?
           </div>
-          <div class="recent-quiz-items" id="options-container">
-            <!-- <div class="recent-quiz-item">
-              <input
-                type="radio"
-                id="option1"
-                name="options"
-                value="option1"
-                class="answers"
-              />
-              <label for="option1" id="option" class="option"
-                >Option 1</label
-              >
-            </div> -->
-            <div class="feedback" id="feedback"></div>
+
+          <div class="recent-quiz-items" id="options-container"></div>
+
+          <!-- explanation section  -->
+          <div class="explanation-box hidden" id="explanation-box">
+            <span class="explanation-label">Explanation</span>
+            <p id="explanation-text"></p>
           </div>
 
           <button id="next-question" class="next-btn" disabled>
-            Next Question →
+            Next Question
           </button>
         </div>
       </section>
 
-      <!-- ================= RESULT SECTION ================= -->
+      <!-- result section -->
       <section class="result-section" id="result-section">
         <div class="quiz-card">
-          <h2>🎉 Quiz Completed!</h2>
+          <h2>Quiz Completed!</h2>
           <p id="final-score"></p>
           <button id="restart-btn" class="next-btn">Restart Quiz</button>
         </div>
