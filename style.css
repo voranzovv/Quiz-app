@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* ================= RESET ================= */
+/* reset  */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-/* ================= MAIN CONTAINER ================= */
+/* main container  */
 .main-container {
   width: 500px;
   background: #ffffff;
@@ -27,14 +27,14 @@ body {
   gap: 25px;
 }
 
-/* ================= HOME SECTION ================= */
+/* home scetion */
 .home-section {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-/* ================= HEADER ================= */
+/* header  */
 .container-header {
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ body {
   color: #666;
 }
 
-/* ================= STREAK & GOAL ================= */
+/* streak and daily goal section  */
 .streak-achievement {
   display: flex;
   gap: 20px;
@@ -99,7 +99,7 @@ body {
   margin-top: 3px;
 }
 
-/* ================= DISCOVER ================= */
+/* discover  */
 .discover h2 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -136,7 +136,7 @@ body {
   font-weight: 500;
 }
 
-/* ================= RECENT QUIZZES ================= */
+/* recent quizzes  */
 .recent-quiz h2 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -169,7 +169,7 @@ body {
   border-radius: 50%;
 }
 
-/* ================= QUIZ CARD ================= */
+/* quiz card  */
 .quiz-card {
   background: #4a90e2;
   color: white;
@@ -181,7 +181,7 @@ body {
   gap: 20px;
 }
 
-/* ================= QUIZ HEADER ================= */
+/* quiz header  */
 .quiz-header h2 {
   font-size: 22px;
 }
@@ -261,13 +261,13 @@ body {
   transition: all 0.3s ease;
   color: #333;
 }
-/* ================= FEEDBACK ================= */
+/* feed back  */
 .feedback {
   font-size: 16px;
   font-weight: bold;
 }
 
-/* ================= NEXT BUTTON ================= */
+/* next button */
 .next-btn {
   align-self: flex-end;
   background: white;
@@ -290,7 +290,7 @@ body {
   background: #e6f0ff;
 }
 
-/* ================= RESULT SECTION ================= */
+/* result section */
 .result-section .quiz-card {
   text-align: center;
 }
@@ -316,7 +316,6 @@ body {
 
 .explanation-box {
   background-color: #fff8e1;
-  border-left: 4px solid #f0c040;
   border-radius: 8px;
   padding: 12px 16px;
   margin-top: 16px;

@@ -11,7 +11,7 @@ export function getRandomQuestions(quizData) {
     console.error("Quiz data is not loaded or empty.");
     return [];
   }
-  return [...quizData].sort(() => 0.5 - Math.random()).slice(0, 2);
+  return [...quizData].sort(() => 0.5 - Math.random()).slice(0, 10);
 }
 
 export function loadQuestion(questions, currentQuestionIndex) {

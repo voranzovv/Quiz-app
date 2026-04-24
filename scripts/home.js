@@ -55,8 +55,14 @@ window.onload = () => {
     if (currentQuestionIndex < questions.length) {
       await loadQuestion(questions, currentQuestionIndex);
     } else {
+      saveHighScore(subject, score);
+      const best = getHighScore(subject);
+
       document.getElementById("final-score").textContent =
         `You scored ${score} out of ${questions.length}!`;
+      document.getElementById("high-score").textContent =
+        `Best Score for ${subject}: ${best} / ${questions.length}`;
+
       showSection("result");
     }
   });
@@ -92,3 +98,14 @@ async function startQuiz(subject) {
 document.getElementById("restart-btn").addEventListener("click", () => {
   showHome();
 });
+
+function getHighScore(subject) {
+  return parseInt(localStorage.getItem(`highScore_${subject}`)) || 0;
+}
+
+function saveHighScore(subject, score) {
+  const current = getHighScore(subject);
+  if (score > current) {
+    localStorage.setItem(`highScore_${subject}`, score);
+  }
+}
